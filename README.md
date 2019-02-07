@@ -1,6 +1,6 @@
 # Shadowsocks ss:// URI generator
     
-![](https://img.shields.io/badge/Python_3.7-brightgreen.svg)
+![](https://img.shields.io/badge/Python-3.7-brightgreen.svg)
 
 ## Usage
 You can simply launch the file:
