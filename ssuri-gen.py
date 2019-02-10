@@ -31,7 +31,7 @@ def parse_json (jsonfile):
     global datastore
     try:
         datastore['server'] = parsed_json['server']
-        datastore['port'] = parsed_json['local_port']
+        datastore['port'] = parsed_json['server_port']
         datastore['password'] = parsed_json['password']
         datastore['method'] = parsed_json['method']
         if parsed_json.get('plugin') != '': # Determines if it is a SIP002 scheme
@@ -50,7 +50,7 @@ def generate_uri(data:dict):
         )
         notencrypt = (
             '@' + data['server'] +
-            ':' + data['port'] +
+            ':' + str(data['port']) +
             '/?plugin=' + data['plugin'] + 
             parse.quote(';' + data['plugin_opts'])
         )
