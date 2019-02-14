@@ -9,11 +9,11 @@ You can simply launch the file:
 ```
 It will ask you everything and generate a link from your answers.
 
-Or, if you have a config.json:
+Or, if you have config.json(s):
 ```
-./ssuri-gen.py </path/to/json.json>
+./ssuri-gen.py config1.json config2.json config3.json ...
 ```
-Then it will read the JSON file and generate the link.
+Then it will read the JSON files and generate the link one by one.
 
 ## Further features
 
